@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Открытый урок Codify English · 5 опытов · план для преподавателя</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: A4; margin: 14mm 14mm 16mm; }
+  :root { --ink: #121419; --soft: #585b62; --line: #e1e4ed; --inset: #f0f3fc; --action: #2e44d1; --soft-blue: #e5edff; --lime: #c3dc3b; --lime-ink: #566200; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 400 10.5pt/1.45 "Inter", system-ui, -apple-system, sans-serif; color: var(--ink); }
+  .page { max-width: 182mm; margin: 0 auto; padding: 8mm 0; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+  header { display: flex; gap: 14px; align-items: center; padding-bottom: 10px; border-bottom: 2px solid var(--line); }
+  header .tile { flex: none; width: 54px; height: 54px; border-radius: 14px; background: linear-gradient(45deg, #00c4fa, #246fff); position: relative; overflow: hidden; }
+  header .tile::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: -14px; height: 40px; border-radius: 50%; background: #fff; }
+  header .tile i { position: absolute; z-index: 1; top: 30px; width: 5px; height: 9px; border-radius: 3px; background: #246fff; left: 18px; }
+  header .tile i + i { left: 31px; }
+  .tag { font: 700 8pt "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--action); }
+  h1 { margin: 2px 0 0; font-size: 19pt; line-height: 1.15; letter-spacing: -.01em; }
+  .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 12px 0; }
+  .meta div { padding: 8px 10px; border-radius: 10px; background: var(--inset); }
+  .meta b { display: block; font-size: 12pt; }
+  .meta span { font-size: 8.5pt; color: var(--soft); }
+  h2 { font-size: 12.5pt; margin: 16px 0 6px; }
+  .idea { padding: 10px 12px; border-radius: 12px; background: var(--soft-blue); }
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { font: 700 8pt "JetBrains Mono", monospace; letter-spacing: .06em; color: var(--soft); text-transform: uppercase; }
+  td.t { white-space: nowrap; font-family: "JetBrains Mono", monospace; color: var(--action); font-weight: 700; }
+  .task { break-inside: avoid; margin: 12px 0; border: 1.5px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .task .hd { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--inset); }
+  .task .n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--action); color: #fff; display: grid; place-items: center; font: 700 10pt "JetBrains Mono", monospace; }
+  .task .hd b { font-size: 12pt; }
+  .task .hd span { margin-left: auto; font: 700 9pt "JetBrains Mono", monospace; color: var(--action); }
+  .task .bd { display: grid; grid-template-columns: 1.25fr 1fr; gap: 10px 16px; padding: 10px 12px; }
+  .task h4 { margin: 0 0 3px; font: 700 7.5pt "JetBrains Mono", monospace; letter-spacing: .08em; color: var(--soft); text-transform: uppercase; }
+  .task p, .task ul, .task ol { margin: 0; }
+  .task ul, .task ol { padding-left: 16px; }
+  .say { font-weight: 650; color: var(--action); }
+  .wow { grid-column: 1 / -1; padding: 7px 10px; border-radius: 10px; background: #f7fbe6; border: 1px solid #dfeaa8; }
+  .wow b { color: var(--lime-ink); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box { padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--line); break-inside: avoid; }
+  .box h3 { margin: 0 0 6px; font-size: 11pt; }
+  .box ul { margin: 0; padding-left: 16px; }
+  .msg { padding: 10px 12px; border-radius: 12px; background: #e9fbe9; border: 1px solid #b9ecc4; font-size: 9.5pt; white-space: pre-line; }
+  footer { margin-top: 14px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 8pt; color: var(--soft); display: flex; justify-content: space-between; }
+  .pb { break-before: page; }
+  @media print { .page { padding: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="tile"><i></i><i></i></div>
+    <div><div class="tag">Codify English · открытый урок · план для преподавателя</div>
+    <h1>5 опытов, после которых родители записывают ребёнка</h1></div>
+  </header>
+
+  <div class="meta">
+    <div><b>55 минут</b><span>5 опытов + паспорт + родители</span></div>
+    <div><b>7–12 лет</b><span>группа до 10 детей, уровень A1</span></div>
+    <div><b>See · Build · Say</b><span>каждое задание — по методу</span></div>
+    <div><b>21–22 ноября</b><span>Codify Джал, Тыналиева, 127</span></div>
+  </div>
+
+  <div class="idea"><b>Главная мысль урока.</b> Дети приходят из книги AiCo Word Lab — они уже <i>видели</i> эти опыты на экране. Здесь они делают то же руками и говорят по-английски. Фраза для родителей в конце: <b>«Вы видели в книге — сегодня ребёнок сделал это сам и рассказал на английском».</b> Каждое задание идёт одним циклом: <b>прогноз → опыт → фраза вслух</b>. Инструкции звучат на английском, с жестами; русский — только чтобы спасти потерявшегося ребёнка.</div>
+
+  <h2>Таймлайн</h2>
+  <table>
+    <tr><th>Время</th><th>Что происходит</th><th>Английский, который звучит</th></tr>
+    <tr><td class="t">0–5</td><td>Паспорт учёного: имя, фото-наклейка AiCo, первый штамп «Hello!». Дети со штампами из книги показывают их — им сразу второй штамп.</td><td class="say">Hello! I am … I am a scientist!</td></tr>
+    <tr><td class="t">5–15</td><td>Задание 1. Апельсин-фокусник</td><td class="say">It floats! It sinks! It’s heavy. It’s light.</td></tr>
+    <tr><td class="t">15–23</td><td>Задание 2. Магнитная рыбалка</td><td class="say">I’ve got a … ! It’s metal.</td></tr>
+    <tr><td class="t">23–31</td><td>Задание 3. Радуга из конфет</td><td class="say">It’s red. I like blue. Look!</td></tr>
+    <tr><td class="t">31–41</td><td>Задание 4. Гонка ракет-шариков</td><td class="say">Three, two, one, go! Fast! Slow!</td></tr>
+    <tr><td class="t">41–50</td><td>Задание 5. Вулкан и отчёт учёного (видео)</td><td class="say">I am a scientist. I mix. Look, bubbles!</td></tr>
+    <tr><td class="t">50–55</td><td>Родители заходят: дети показывают паспорт и один опыт, менеджер раздаёт предложение</td><td class="say">Mum, look! It floats!</td></tr>
+  </table>
+
+  <div class="task">
+    <div class="hd"><div class="n">1</div><b>🍊 Апельсин-фокусник — плавает или тонет</b><span>10 мин</span></div>
+    <div class="bd">
+      <div><h4>Что делают дети</h4><ol><li>Учитель показывает предмет — дети поднимают карточку <b>FLOAT</b> или <b>SINK</b> (прогноз).</li><li>Бросаем в воду: яблоко, монету, мяч, камень — как в книге.</li><li>Фокус: целый апельсин плавает. Чистим его — и он тонет. Пусть спорят!</li><li>Каждый говорит фразу о своём предмете.</li></ol></div>
+      <div><h4>Материалы</h4><ul><li>Прозрачный таз с водой</li><li>2 апельсина, яблоко, монета, мячик, камень</li><li>Карточки FLOAT / SINK на каждого</li><li>Полотенце</li></ul><h4 style="margin-top:8px">Слова</h4><p class="say">float, sink, heavy, light, water, air</p></div>
+      <div class="wow"><b>Вау для родителей:</b> ребёнок спорит о прогнозе по-английски — «It floats!» — «No, it sinks!». Кожура апельсина полна воздуха — это объяснение из книги, урок 1.</div>
+    </div>
+  </div>
+
+  <div class="task">
+    <div class="hd"><div class="n">2</div><b>🧲 Магнитная рыбалка</b><span>8 мин</span></div>
+    <div class="bd">
+      <div><h4>Что делают дети</h4><ol><li>В «пруду» (коробка) карточки-рыбки со словами из книги, к каждой прикреплена скрепка. Есть и «пустые» рыбки без скрепки.</li><li>Удочкой с магнитом ловят рыбку и читают слово — если сказал, рыбка твоя.</li><li>Рыбки без скрепки не ловятся — почему? <span class="say">It’s not metal!</span></li></ol></div>
+      <div><h4>Материалы</h4><ul><li>3–4 удочки: палочка + нитка + магнит</li><li>24 карточки-рыбки (слова уроков 1–5), скрепки</li><li>Коробка «пруд»</li></ul><h4 style="margin-top:8px">Слова</h4><p class="say">magnet, metal, pull, stick + 12 слов из книги</p></div>
+      <div class="wow"><b>Вау для родителей:</b> за 8 минут ребёнок вслух повторяет 10–12 английских слов — и смеётся. Это урок 2 книги, только по-настоящему.</div>
+    </div>
+  </div>
+
+  <div class="task">
+    <div class="hd"><div class="n">3</div><b>🌈 Радуга из конфет</b><span>8 мин</span></div>
+    <div class="bd">
+      <div><h4>Что делают дети</h4><ol><li>Выкладывают круг из цветных драже на белую тарелку, называя цвета.</li><li>Прогноз: что будет, если налить тёплую воду в центр?</li><li>Наливают — цвета растекаются радугой к центру. Дети называют цвета по порядку.</li></ol></div>
+      <div><h4>Материалы</h4><ul><li>Белые тарелки (по одной на пару)</li><li>Цветное драже (Skittles, M&amp;M’s)</li><li>Кувшин тёплой воды</li></ul><h4 style="margin-top:8px">Слова</h4><p class="say">red, orange, yellow, green, blue, violet, colour</p></div>
+      <div class="wow"><b>Вау для родителей:</b> самый «фотогеничный» момент — снимите короткое видео тарелок сверху для родителей и Instagram (с согласия родителей).</div>
+    </div>
+  </div>
+
+  <div class="task">
+    <div class="hd"><div class="n">4</div><b>🎈 Гонка ракет-шариков</b><span>10 мин</span></div>
+    <div class="bd">
+      <div><h4>Что делают дети</h4><ol><li>Две команды. Через комнату натянуты две нитки, на каждой — трубочка.</li><li>Прогноз: какой шарик улетит дальше — большой или маленький?</li><li>Надуваем, клеим скотчем к трубочке и запускаем всей командой: <span class="say">Three, two, one, go!</span></li><li>Пробуем снова, комментируем: <span class="say">Fast! Slow! Far!</span></li></ol></div>
+      <div><h4>Материалы</h4><ul><li>2 нитки по 4–5 м, 2 трубочки</li><li>Шарики (запас), скотч</li><li>Рулетка, стикеры для отметок</li></ul><h4 style="margin-top:8px">Слова</h4><p class="say">fast, slow, far, near, big, small, go</p></div>
+      <div class="wow"><b>Вау для родителей:</b> за дверью слышно, как весь класс кричит по-английски. Это тот звук, за которым родители приходят.</div>
+    </div>
+  </div>
+
+  <div class="task">
+    <div class="hd"><div class="n">5</div><b>🌋 Вулкан и отчёт учёного</b><span>9 мин</span></div>
+    <div class="bd">
+      <div><h4>Что делают дети</h4><ol><li>Прогноз (как в уроке 10 книги): сода + уксус — что будет?</li><li>Насыпают соду в бутылку, вливают уксус с краской — извержение! Вариант с шариком на горлышке — шарик надувается.</li><li><b>Отчёт учёного:</b> ребёнок говорит на камеру 15–20 секунд по шаблону на доске.</li></ol><p style="margin-top:6px" class="say">I am a scientist. I mix soda and vinegar. Look — bubbles! The balloon gets big!</p></div>
+      <div><h4>Материалы</h4><ul><li>Сода, уксус 9%, пищевой краситель</li><li>Маленькие бутылки, воронка, шарики</li><li>Поднос, салфетки</li><li>Телефон для видео + шаблон отчёта на доске</li></ul><h4 style="margin-top:8px">Слова</h4><p class="say">mix, pour, bubble, gas, bottle, balloon</p></div>
+      <div class="wow"><b>Вау для родителей:</b> вечером родитель получает в WhatsApp видео, где его ребёнок говорит на английском. Это главный довод для покупки — видео приходит вместе с предложением.</div>
+    </div>
+  </div>
+
+  <div class="grid2 pb">
+    <div class="box"><h3>Последние 5 минут — с родителями</h3><ul>
+      <li>Дети показывают паспорт со штампами и говорят одну фразу из любого опыта.</li>
+      <li>Учитель — 30 секунд: что делали, сколько слов прозвучало, метод See it · Build it · Say it.</li>
+      <li>Менеджер: расписание групп, стоимость, запись на первое занятие. Записываем сразу, пока дети в восторге.</li>
+      <li>Каждому ребёнку — наклейка AiCo и паспорт домой.</li></ul></div>
+    <div class="box"><h3>Подготовка (за 30 минут)</h3><ul>
+      <li>Распечатать паспорта (файл <span class="mono">passport.html</span>), по одному на ребёнка.</li>
+      <li>Штамп или лаймовые наклейки — 6 штук на ребёнка.</li>
+      <li>Шаблон отчёта учёного — крупно на доске.</li>
+      <li>Согласие родителей на видео — в форме записи или устно на входе.</li>
+      <li>Список детей из заявок с пометкой «AiCo Word Lab» и числом штампов из книги.</li></ul></div>
+  </div>
+
+  <h2>Сообщение родителю вечером (WhatsApp)</h2>
+  <div class="msg">Здравствуйте! Это Codify English 🙂
+Сегодня {Имя} сделал(а) 5 опытов и рассказал(а) о них по-английски — видео отчёта учёного во вложении.
+На уроке прозвучало больше 25 английских слов: float, sink, magnet, colour, fast…
+Группа {7–9 / 10–12} занимается по {дни}. Первое занятие — {дата}. Записать {Имя}?</div>
+
+  <footer><span>Codify English · AiCo Word Lab · план открытого урока</span><span>english.codify.kg · WhatsApp +996 500 431 430</span></footer>
+</div>
+</body>
+</html>

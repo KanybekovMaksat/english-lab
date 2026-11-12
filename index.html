@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>AiCo Word Lab — английский через опыты · Codify English</title>
+<meta name="description" content="Бесплатная 3D-книга для детей 7–12 лет: 10 научных опытов и 60 английских слов. Прогноз, опыт, Say it и штампы AiCo. От Codify English." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="AiCo Word Lab — английский через опыты" />
+<meta property="og:description" content="10 опытов и 60 английских слов в 3D-книге для детей 7–12 лет. Бесплатно от Codify English." />
+<meta property="og:image" content="og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#246fff" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='t' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2300c4fa'/%3E%3Cstop offset='1' stop-color='%23246fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' rx='44' fill='url(%23t)'/%3E%3Ccircle cx='100' cy='152' r='84' fill='%23fff'/%3E%3Cpath d='M78 108V124M122 108V124' stroke='%23246fff' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E" />
+<style>
+  /* критичный CSS: загрузчик и рамка видны до скриптов */
+  :root { --ink: #121419; --soft: #585b62; --line: #e1e4ed; --action: #2e44d1; --lime: #c3dc3b; --page: #f8faff; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #dfe6f3; color: var(--ink); font-family: "Inter Variable", Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; overscroll-behavior: none; }
+  canvas#c { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+  #loader { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; background: linear-gradient(45deg, #00c4fa, #246fff); color: #fff; transition: opacity .6s ease, visibility 0s .6s; }
+  #loader.done { opacity: 0; visibility: hidden; }
+  #loader .in { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  #loader .tile { width: 84px; height: 84px; border-radius: 22px; background: rgba(255,255,255,.18); display: grid; place-items: center; animation: bob 1.6s cubic-bezier(.2,0,0,1) infinite; }
+  #loader .tile i { width: 48px; height: 30px; border-radius: 26px 26px 10px 10px; background: #fff; position: relative; }
+  #loader .tile i::before, #loader .tile i::after { content: ""; position: absolute; top: 9px; width: 7px; height: 12px; border-radius: 4px; background: #246fff; left: 12px; }
+  #loader .tile i::after { left: 29px; }
+  #loader b { font-size: 20px; font-weight: 800; letter-spacing: -.01em; }
+  #loader b span { color: var(--lime); }
+  #loader .bar { width: 160px; height: 4px; border-radius: 2px; background: rgba(255,255,255,.25); overflow: hidden; }
+  #loader .bar i { display: block; height: 100%; width: 30%; border-radius: 2px; background: var(--lime); animation: run 1.2s ease-in-out infinite; }
+  @keyframes run { 0% { transform: translateX(-100%); } 100% { transform: translateX(340%); } }
+  @keyframes bob { 50% { transform: translateY(-6px); } }
+  #nogl { position: fixed; inset: 0; display: none; place-items: center; background: var(--page); z-index: 30; padding: 24px; text-align: center; }
+  body.nogl #nogl { display: grid; }
+  .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .sr:focus-within { position: fixed !important; width: auto; height: auto; clip: auto; left: 12px; top: 12px; max-width: min(520px, calc(100vw - 24px)); max-height: 70vh; overflow: auto; background: #fff; padding: 14px 16px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 40; white-space: normal; }
+</style>
+</head>
+<body>
+<div id="loader" role="status" aria-live="polite"><div class="in"><div class="tile"><i></i></div><b>AiCo <span>Word Lab</span></b><div class="bar"><i></i></div></div></div>
+<canvas id="c" tabindex="0" aria-label="AiCo Word Lab: an open 3D book. Use the arrow keys to turn pages, or the text version."></canvas>
+<div id="ui"></div>
+<main id="a11y" class="sr" aria-label="Text version of the book"></main>
+<div id="live" class="sr" aria-live="polite" aria-atomic="true"></div>
+<div id="nogl" role="alert"><div><h1 style="font-size:22px;margin:0 0 10px">This book needs WebGL</h1><p style="max-width:440px;margin:0 auto;line-height:1.5;color:#585b62">Your browser could not start 3D graphics. Try a recent Chrome, Safari or Firefox, or turn on hardware acceleration.<br/>Книге нужна 3D-графика: откройте её в свежем Chrome или Safari.</p></div></div>
+<noscript><p style="position:fixed;inset:auto 0 0 0;padding:12px;background:#fff;text-align:center">AiCo Word Lab needs JavaScript.</p></noscript>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AiCo Lab Passport · Codify English</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Inter", system-ui, -apple-system, sans-serif; color: #121419; }
+  .sheet { width: 210mm; height: 297mm; margin: 0 auto; padding: 14mm; display: flex; flex-direction: column; gap: 8mm; background: #fff; }
+  .cover { border-radius: 8mm; padding: 9mm; background: linear-gradient(45deg, #00c4fa, #246fff); color: #fff; display: flex; gap: 8mm; align-items: center; position: relative; overflow: hidden; }
+  .cover::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.18) 1px, transparent 1.2px); background-size: 6mm 6mm; }
+  .aico { position: relative; flex: none; width: 42mm; height: 42mm; border-radius: 10mm; background: rgba(255,255,255,.16); overflow: hidden; }
+  .aico .dome { position: absolute; left: 4mm; right: 4mm; top: 15mm; bottom: -14mm; border-radius: 50%; background: #fff; }
+  .aico .eye { position: absolute; top: 21mm; width: 3mm; height: 3mm; border: 1.6mm solid #6d7c00; border-right: 0; border-bottom: 0; transform: rotate(45deg); }
+  .aico .eye.l { left: 13mm; } .aico .eye.r { right: 13mm; }
+  .aico .pix { position: absolute; left: 18.5mm; top: 7.5mm; width: 5mm; height: 5mm; border-radius: 1.4mm; background: #c3dc3b; border: .4mm solid #869902; }
+  .aico .lime { position: absolute; left: 0; right: 0; bottom: 0; height: 9mm; background: linear-gradient(#c3dc3b, #869902); }
+  .t { position: relative; }
+  .t small { font: 700 9pt "JetBrains Mono", monospace; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .t h1 { margin: 2mm 0 0; font-size: 30pt; line-height: 1; font-weight: 850; letter-spacing: -.02em; }
+  .t h1 em { font-style: normal; color: #c3dc3b; display: block; }
+  .t p { margin: 3mm 0 0; font-size: 11pt; opacity: .95; }
+  .me { display: grid; grid-template-columns: 1fr 1fr 34mm; gap: 6mm; }
+  .field { border-bottom: .5mm solid #abaeb6; padding-bottom: 1.5mm; }
+  .field span { display: block; font: 700 8pt "JetBrains Mono", monospace; letter-spacing: .1em; color: #2e44d1; text-transform: uppercase; margin-bottom: 9mm; }
+  .photo { border: .5mm dashed #abaeb6; border-radius: 4mm; height: 34mm; display: grid; place-items: center; text-align: center; font-size: 8pt; color: #8a8d95; }
+  h2 { margin: 0; font-size: 15pt; letter-spacing: -.01em; }
+  h2 small { font-size: 10pt; color: #585b62; font-weight: 500; margin-left: 2mm; }
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4mm 3mm; }
+  .grid.book { grid-template-columns: repeat(5, 1fr); }
+  .slot { display: flex; flex-direction: column; align-items: center; gap: 1.5mm; text-align: center; }
+  .slot i { width: 24mm; height: 24mm; border-radius: 50%; border: .5mm dashed #abaeb6; display: grid; place-items: center; font: 700 12pt "JetBrains Mono", monospace; font-style: normal; color: #e1e4ed; }
+  .slot.trial i { border-color: #a1b62c; color: #dfeaa8; }
+  .slot b { font-size: 9pt; line-height: 1.2; }
+  .slot span { font-size: 7.5pt; color: #8a8d95; }
+  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 4mm; border-top: .3mm solid #e1e4ed; font-size: 8.5pt; color: #585b62; }
+  .foot b { color: #2e44d1; }
+  @media screen { body { background: #dfe6f3; padding: 10mm 0; } .sheet { box-shadow: 0 10px 30px rgba(10,16,88,.2); } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="cover">
+    <div class="aico"><div class="lime"></div><div class="dome"></div><div class="eye l"></div><div class="eye r"></div><div class="pix"></div></div>
+    <div class="t"><small>Codify English · AiCo Word Lab</small><h1>Lab Passport<em>I am a scientist!</em></h1><p>Collect a stamp for every experiment · Собирай штамп за каждый опыт</p></div>
+  </div>
+
+  <div class="me">
+    <div class="field"><span>My name · Меня зовут</span></div>
+    <div class="field"><span>Age · Возраст</span></div>
+    <div class="photo">Sticker<br>AiCo</div>
+  </div>
+
+  <h2>Open lesson <small>Открытый урок · 5 опытов</small></h2>
+  <div class="grid">
+    <div class="slot trial"><i>Hi</i><b>Hello!</b><span>I am a scientist</span></div>
+    <div class="slot trial"><i>1</i><b>Orange trick</b><span>float · sink</span></div>
+    <div class="slot trial"><i>2</i><b>Magnet fishing</b><span>magnet · metal</span></div>
+    <div class="slot trial"><i>3</i><b>Sweet rainbow</b><span>colours</span></div>
+    <div class="slot trial"><i>4</i><b>Balloon rocket</b><span>fast · slow</span></div>
+    <div class="slot trial"><i>5</i><b>Volcano report</b><span>mix · bubbles</span></div>
+  </div>
+
+  <h2>AiCo Word Lab <small>Штампы из книги · 10 опытов</small></h2>
+  <div class="grid book">
+    <div class="slot"><i>1</i><b>Float or sink?</b></div>
+    <div class="slot"><i>2</i><b>Magic magnet</b></div>
+    <div class="slot"><i>3</i><b>Make a rainbow</b></div>
+    <div class="slot"><i>4</i><b>Grow a plant</b></div>
+    <div class="slot"><i>5</i><b>Fast or slow?</b></div>
+    <div class="slot"><i>6</i><b>Make it sing</b></div>
+    <div class="slot"><i>7</i><b>Shadow show</b></div>
+    <div class="slot"><i>8</i><b>Ice race</b></div>
+    <div class="slot"><i>9</i><b>Light it up</b></div>
+    <div class="slot"><i>10</i><b>Fizz balloon</b></div>
+  </div>
+
+  <div class="foot"><span><b>See it. Build it. Say it.</b> · Увидел. Собрал. Рассказал.</span><span>english.codify.kg · Codify Джал, Тыналиева, 127</span></div>
+</div>
+</body>
+</html>
